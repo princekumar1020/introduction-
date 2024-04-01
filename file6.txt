@@ -1,8 +1,5 @@
 hello 
 how are you
 my name is prince
-<<<<<<< HEAD
 i like python
-=======
 i like c language 
->>>>>>> b1149e000add06ccccc92dfd332b084adf9b7f40
