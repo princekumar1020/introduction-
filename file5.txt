@@ -1,7 +1,0 @@
-hello
-hello world 
-<<<<<<< HEAD
-hello moksh
-=======
-hi prince
->>>>>>>

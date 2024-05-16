@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Snakes and Ladders</title>
+  <style>
+    /* CSS styles for the game board */
+    #board {
+      width: 400px;
+      height: 400px;
+      border: 2px solid black;
+      display: grid;
+      grid-template-columns: repeat(10, 1fr);
+      grid-template-rows: repeat(10, 1fr);
+    }
+    .cell {
+      border: 1px solid black;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  </style>
+</head>
+<body>
+  <div id="board"></div>
+  
+  <script>
+    // JavaScript code for generating the game board
+    const boardSize = 10; // Size of the board (10x10)
+    const board = document.getElementById('board');
+    
+    // Function to create the board cells
+    function createBoard() {
+      for (let i = 0; i < boardSize; i++) {
+        for (let j = 0; j < boardSize; j++) {
+          const cell = document.createElement('div');
+          cell.className = 'cell';
+          cell.textContent = (i * boardSize) + j + 1; // Display cell number
+          board.appendChild(cell);
+        }
+      }
+    }
+    
+    createBoard(); // Call the function to create the board
+  </script>
+</body>
+</html>
